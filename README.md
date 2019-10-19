@@ -11,9 +11,13 @@ In our group, we have:
 
 ## Install
 
-<code> git clone https://github.com/Lynnluxu/MDWebsiteProject.git </code>
+<code> git clone https://github.com/Lynnluxu/MDWebsiteProject.git my-app</code>
 
-cd to the project, don't forget to run <code>npm install</code> to install all the necessary dependencies.
+<code> cd my-app </code>
+
+Don't forget to run <code>npm install</code> to install all the necessary dependencies.
 
 ## Preview
-<code>npm start</code>
+To have a preview of this website, you can run:
+<code> npm start</code>
+and click the URL to check the website on your local server.
