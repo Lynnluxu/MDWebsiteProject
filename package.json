@@ -1,0 +1,69 @@
+{
+  "name": "my-app-online-shop",
+  "version": "0.9.0",
+  "contributors": [
+    "Amine El Khiati, Burak Kucukal, Lu Xu"
+  ],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polymer/pwa-starter-kit.git"
+  },
+  "scripts": {
+    "start": "polymer serve",
+    "build": "polymer build --auto-base-path && gulp prpl-server",
+    "build:static": "polymer build",
+    "serve": "prpl-server --root server/build",
+    "serve:static": "polymer serve --port 5000 build/es5-bundled",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:integration": "mocha test/integration --timeout=10000",
+    "test:unit": "polymer test --module-resolution=node --npm",
+    "test:sauce": "polymer test --module-resolution=node --npm -s 'windows 10/microsoftedge@17' -s 'macos 10.13/safari@11'",
+    "test:regenerate_screenshots": "mocha test/integration/screenshots-baseline/regenerate.js --timeout=15000"
+  },
+  "dependencies": {
+    "@material/animation": "^3.1.0",
+    "@material/auto-init": "^3.1.0",
+    "@material/button": "^3.2.0",
+    "@material/elevation": "^1.0.0",
+    "@material/image-list": "^1.1.1",
+    "@material/typography": "^1.0.0",
+    "@polymer/app-layout": "^3.0.0",
+    "@polymer/polymer": "^3.1.0",
+    "lit-element": "^2.2.1",
+    "mdui": "^0.4.3",
+    "pwa-helpers": "^0.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.3.0",
+    "axe-core": "^3.0.0",
+    "chai": "^4.1.2",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.3.0",
+    "gulp-replace": "^1.0.0",
+    "mocha": "^5.2.0",
+    "pixelmatch": "^4.0.2",
+    "polymer-cli": "^1.9.11",
+    "polyserve": "^0.27.0",
+    "prpl-server": "^1.4.0",
+    "puppeteer": "^1.5.0",
+    "redux-devtools": "^3.5.0",
+    "wct-mocha": "^1.0.1"
+  },
+  "description": "[![Built with pwa–starter–kit](https://img.shields.io/badge/built_with-pwa–starter–kit_-blue.svg)](https://github.com/Polymer/pwa-starter-kit \"Built with pwa–starter–kit\") [![Build status](https://api.travis-ci.org/Polymer/pwa-starter-kit.svg?branch=master)](https://travis-ci.org/Polymer/pwa-starter-kit)",
+  "bugs": {
+    "url": "https://github.com/Polymer/pwa-starter-kit/issues"
+  },
+  "homepage": "https://github.com/Polymer/pwa-starter-kit#readme",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
+}
