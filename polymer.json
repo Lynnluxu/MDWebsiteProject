@@ -1,13 +1,15 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/components/my-app.js",
+  "shell": "./src/components/my-app.js",
   "sources": [
-    "images/**/*"
+    "./images/**/*",
+    "./data/**/**"
   ],
   "extraDependencies": [
     "manifest.json",
     "node_modules/@webcomponents/webcomponentsjs/**",
     "push-manifest.json"
+    
   ],
   "builds": [
     {
@@ -65,5 +67,6 @@
     }
   ],
   "moduleResolution": "node",
-  "npm": true
+  "npm": true,
+  "basePath": true
 }
